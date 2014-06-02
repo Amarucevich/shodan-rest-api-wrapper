@@ -26,7 +26,7 @@ $search = $shodan->host_search('NASA', 2); // Retrieves results from page 2.
 ```
 
 
-##### Returns all services that have been found on the given host IP.
+##### Return all services that have been found on the given host IP.
 
 ```php
 $shodan = new Shodan('apikey');
@@ -72,7 +72,7 @@ $shodan = new Shodan('apikey');
 $reverse = $shodan->dns_reverse('shodanhq.com');
 ```
 
-##### Returns your current IP address as seen from the Internet.
+##### Return your current IP address as seen from the Internet.
 
 ```php
 $shodan = new Shodan('apikey');
@@ -80,7 +80,7 @@ $ip = $shodan->myip();
 ```
 
 
-##### Returns information about the API plan belonging to the given API key.
+##### Return information about the API plan belonging to the given API key.
 
 ```php
 $shodan = new Shodan('apikey');
@@ -96,4 +96,17 @@ $banners = $shodan->banners();
 ```
 
 
-##### Return geolocation data for all of the collected data by Shodan
+##### Return geolocation data for all of the collected data by Shodan.
+
+```php
+$shodan = new Shodan('apikey');
+$geo = $shodan->geo();
+```
+
+
+##### Return banner data for the list of specified hosts.
+
+```php
+$shodan = new Shodan('apikey');
+$ports = $shodan->ports();
+```
