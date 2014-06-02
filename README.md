@@ -17,7 +17,7 @@ Up-to-date Shodan REST API wrapper.
 
 
 
-##### Search hosts
+##### Search Shodan
 
 ```php
 $shodan = new Shodan('apikey');
@@ -26,7 +26,7 @@ $search = $shodan->host_search('NASA', 2); // Retrieves results from page 2.
 ```
 
 
-##### Search Shodan
+##### Returns all services that have been found on the given host IP.
 
 ```php
 $shodan = new Shodan('apikey');
