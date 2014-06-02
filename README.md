@@ -1,4 +1,4 @@
-shodan-rest-api-wrapper
+Shodan REST API Wrapper
 =======================
 
 Up-to-date Shodan REST API wrapper.
